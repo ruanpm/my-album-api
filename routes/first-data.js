@@ -22,7 +22,7 @@ router.use(function(req, res, next) {
 			var db = firebase.database();
 			var ref = db.ref('occasions');
 
-			var layout = ['layout0', 'layout1', 'layout2'];
+			var layouts = ['layout0', 'layout1', 'layout2'];
 
 			var data = { 
 		    		slides: [
@@ -39,7 +39,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		          {
 		              title: 'Welcome to the Docs!',
@@ -54,7 +54,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -69,7 +69,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -84,7 +84,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -99,7 +99,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -114,7 +114,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -129,7 +129,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -144,7 +144,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		          {
 		              title: 'Welcome to the Docs!',
@@ -159,7 +159,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -174,7 +174,7 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          },
 		           {
 		              title: 'Welcome to the Docs!',
@@ -189,11 +189,12 @@ router.use(function(req, res, next) {
 		                    desc: ''
 		                  }
 		              ],
-		            layout: layout[0]
+		            layout: layouts[0]
 		          }
 		        ]
 		    };
 
+		    data.layouts = layouts;
 
 			res.json(data);
 
